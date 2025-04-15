@@ -1,13 +1,15 @@
 # Dope
 
-A unique tag-based [Ghost](https://github.com/TryGhost/Ghost) theme to arrange your publications into collections. Keep organized and let your readers explore your publications with beautifully designed tag columns.
+A unique **featured-post**-based [Ghost](https://github.com/TryGhost/Ghost) theme to arrange your publications into collections. Keep organized and let your readers explore your publications with beautifully designed tag columns.
 
 **Demo: https://dope.ghost.io**
 
 # Instructions
 
-1. [Download this theme](https://github.com/TryGhost/Dope/archive/main.zip)
+1. Zip up this current forked version of the `Dope` theme
 2. Log into Ghost, and go to the `Design` settings area to upload the zip file
+
+This variant uses featured posts to promote to the home page. Also, I have removed the date/timestamp for featured articles as they will probably seem a bit ... old.
 
 # Development
 
