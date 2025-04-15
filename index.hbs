@@ -3,18 +3,18 @@
 <div class="content-area">
 <main class="site-main">
 
-    {{#get "tags" limit="all"}}
+    {{#get "posts" filter="featured:true"}}
     <div class="tag-feed owl" data-count="{{pagination.total}}">
 
-        {{#foreach tags}}
+        {{#foreach posts}}
         <div class="tag u-placeholder">
             <img class="tag-image u-object-fit" src="{{#if feature_image}}{{img_url feature_image}}{{else}}{{@site.cover_image}}{{/if}}" alt="{{name}}">
             <div class="tag-content">
-                <h2 class="tag-name">{{name}}</h2>
+                <h2 class="tag-name">{{title}}</h2>
 
-                {{#if description}}
+                {{#if custom_excerpt}}
                     <div class="tag-description">
-                        {{description}}
+                        {{custom_excerpt}}
                     </div>
                 {{/if}}
             </div>
@@ -24,6 +24,7 @@
 
     </div>
     {{/get}}
+
 
 </main>
 </div>
