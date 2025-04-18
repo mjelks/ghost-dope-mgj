@@ -65,7 +65,7 @@
 <form id="contactForm">
   <input name="name" placeholder="Your Name" required>
   <input name="email" type="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message"></textarea>
+  <textarea name="message" placeholder="Your Message" required></textarea>
   <div class="form-actions">
     <button type="submit">Send</button>
     <div class="cf-turnstile" data-sitekey="{{@custom.turnstile_sitekey}}"></div>
@@ -89,8 +89,9 @@
         });
 
         if (response.status === 200) {
-        alert('Thanks for reaching out! Your message was sent.');
+        //alert('Thanks for reaching out! Your message was sent.');
         form.reset();  // 💥 Clears all fields
+        window.location.href = '/thanks';  // 🔥 Redirect to "Thank You" page
         } else {
         alert('Something went wrong — please try again later.');
         }
