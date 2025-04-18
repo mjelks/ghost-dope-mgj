@@ -11,6 +11,19 @@ A unique **featured-post**-based [Ghost](https://github.com/TryGhost/Ghost) them
 
 This variant uses featured posts to promote to the home page. Also, I have removed the date/timestamp for featured articles as they will probably seem a bit ... old.
 
+## MJelks Deviations from the Norm
+
+1. `index.hbs`
+   1. instead of using `tags`, I am filtering on **Featured** Posts
+2. `partials/contact-form.hbs`
+   - I have created a new partial that is using a bespoke javascript that talks to an express / node.js backend with a SendGrid API
+    - ![contact screeshot example](assets/images/contact-screenshot.png)
+   - To invoke / use this, simply tag any post with a **contact**
+      - (if you don't have the tag, just make it)
+3. I have created a spot to add the Cloudflare Sitekey needed for the Captcha/Spam protection.
+   - visit `/ghost/#/settings/design/edit`
+   - ![contact screeshot example](assets/images/turnstile-screenshot.png)
+
 # Development
 
 Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
