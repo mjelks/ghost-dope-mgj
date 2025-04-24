@@ -10,7 +10,7 @@
             {{> "post-header"}}
         {{else}}
             <header class="post-header gh-canvas">
-                {{#has tag="contact, no-date"}}
+                {{#has tag="#contact, #no-date"}}
                 {{else}}
                     {{#primary_tag}}
                         <div class="post-tags">
@@ -42,7 +42,7 @@
         {{/if}}
         <div class="post-content gh-content gh-canvas">            
             {{content}}
-            {{#has tag="contact"}}
+            {{#has tag="#contact"}}
                 {{> contact-form}}
             {{/has}}
         </div>

@@ -18,7 +18,7 @@ This variant uses featured posts to promote to the home page. Also, I have remov
 2. `partials/contact-form.hbs`
    - I have created a new partial that is using a bespoke javascript that talks to an express / node.js backend with a SendGrid API
     - ![contact screeshot example](assets/images/contact-screenshot.png)
-   - To invoke / use this, simply tag any post with a **contact**
+   - To invoke / use this, simply tag any post with a **#contact** (internal tag)
       - (if you don't have the tag, just make it)
 3. I have created a spot to add the Cloudflare Sitekey needed for the Captcha/Spam protection.
    - visit `/ghost/#/settings/design/edit`
