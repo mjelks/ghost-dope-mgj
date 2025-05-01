@@ -4,7 +4,7 @@
 
 .single-post .u-placeholder {
     display: flex;
-    min-height: 360px;
+    min-height: 560px;
 }
 
 .single-post .u-placeholder::before {
@@ -60,18 +60,18 @@
 
 @media (max-width: 767px) {
     .single-post .u-placeholder {
-        min-height: 300px;
+        min-height: 120px;
     }
 
     .single-post .post-header {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .single-post .post-title {
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .single-post .post-media {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
     }
 }
