@@ -7,3 +7,8 @@
     background-color: var(--black-color);
     
 }
+
+.gh-foot a:hover {
+    color: var(--subaccent-color);
+    opacity: 1;
+}
